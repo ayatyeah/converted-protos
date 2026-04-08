@@ -1,6 +1,6 @@
-module github.com/YeahAyat/converted-protos
+module github.com/ayatyeah/converted-protos
 
-go 1.22
+go 1.24.0
 
 require (
 	google.golang.org/grpc v1.76.0
