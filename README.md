@@ -35,4 +35,4 @@
 
 ## Подключение в других проектах
 
-go get github.com/your-user/converted-protos@v1.0.0
+go get github.com/ayatyeah/converted-protos@v1.0.0
