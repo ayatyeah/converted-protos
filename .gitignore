@@ -1,0 +1,2 @@
+# Optional: ignore generated artifacts from local experiments
+*.tmp
