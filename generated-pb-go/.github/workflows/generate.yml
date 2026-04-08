@@ -1,4 +1,3 @@
-
 name: Generate Protobuf Go Files
 
 on:
@@ -32,7 +31,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: "1.22"
+          go-version: "1.24"
 
       - name: Install protoc
         run: |
@@ -69,8 +68,8 @@ jobs:
       - name: Commit and push if changed
         run: |
           if [ -n "$(git status --porcelain)" ]; then
-            git config user.name "${GIT_USER_NAME}"
-            git config user.email "${GIT_USER_EMAIL}"
+            git config user.name "$YeahAyat"
+            git config user.email "$yeahayat@users.noreply.github.com"
             git add .
             git commit -m "chore: regenerate protobuf go files"
             git remote set-url origin https://${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
